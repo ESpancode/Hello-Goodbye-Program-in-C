@@ -1,32 +1,41 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+/* header file for
+hello\goodbye program */
 
-# Precompiled Headers
-*.gch
-*.pch
+int hello();
+int goodbye();
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+#include "hello.h"
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+int main()
+{
+hello();
+goodbye();
+return 0;
+}
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+#include <stdio.h>
 
-# Debug files
-*.dSYM/
+int main()
+
+{
+
+printf ("Hello World \n");
+return 0;
+
+}
+
+#include <stdio.h>
+int hello()
+{
+printf("Hello World\n");
+return 0;
+}
+
+#include <stdio.h>
+
+int goodbye()
+
+{
+printf("Goodbye World\n");
+return 0;
+}
